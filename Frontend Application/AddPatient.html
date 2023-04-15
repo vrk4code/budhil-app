@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Patient</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="PatientPage">
+    <form id="form" method="POST" action="WelcomePage.html">
+        <div class="container">
+            <div class="row main-row">
+                <div class="col"></div>
+                <div class="col-10">
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row headingtext">
+                <div class="col"></div>
+                <div class="col-10">
+                    <h3>Add New Patient</h3>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <p>
+                        <input type="text" class="form-control" id="First Name" name="name" placeholder="First Name" required />
+                    </p>
+                </div>
+                <div class="col-4">
+                    <p>
+                        <input type="text" class="form-control" id="Last Name" name="name" placeholder="Last Name" required />
+                        <br>
+                        <br>
+                    </p>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-5">
+                            Date of Birth 
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="date"  class="form-control" id="DOB" name="date" required />
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-5">
+                            Gender 
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <input type="radio" id="Male" name="Gender" value="Male">
+                            <label for="Male">Male</label>
+                            <input type="radio" id="Female" name="Gender" value="Female">
+                            <label for="Female">Female</label> 
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4" class="form-inline">
+                    <br>
+                    Blood Group: 
+                    <select name="group" id="blood-group" required>
+                        <option value="-O">-O</option>
+                        <option value="+O">+O</option>
+                        <option value="-AB">-AB</option>
+                        <option value="+AB">+AB</option>
+                        <option value="-A">-A</option>
+                        <option value="+A">+A</option>
+                        <option value="-B">-B</option>
+                        <option value="+B">+B</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <br>
+                    <input type="text" class="form-control" id="contact" placeholder="Contact Number" required />
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                        Visited Earler: <br>
+                        <label>
+                            <input type="checkbox" name="Visited_Earler" value="1" onclick="handleCheckboxChange(this)">
+                            Yes
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Visited_Earler" value="2" onclick="handleCheckboxChange(this)">
+                            No
+                        </label>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-8 submit-button">
+                    <p>
+                        <input type="submit" class="btn btn-primary btn-lg" value="Submit">
+                    </p>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

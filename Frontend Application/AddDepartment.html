@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Deparment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="DepartmentPage">
+    <form id="form" method="POST" action="WelcomePage.html">
+        <div class="container">
+            <div class="row main-row">
+                <div class="col"></div>
+                <div class="col-10">
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col"></div>
+                <div class="col-10">
+                    <h3>Fill the below details to add new Department</h3>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <input type="text" class="form-control" id="DeptName" name="name" placeholder="Dept Name" required />
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-6" id="Dept_Description">
+                    <div>
+                        Department Description<br><br>
+                        <textarea id="Dept_Description" class="form-control" name="Dept_Description" rows="4" cols="50"></textarea>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <input type="number" class="form-control" id="Count_Of_Doctors" name="Count_Of_Doctors" placeholder="No. of Doctors" required />
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <input type="number" class="form-control" id="No_Genral_Rooms" name="No_Genral_Rooms" placeholder="No. of Genral Rooms" required />
+                </div>
+                <div class="col-4">
+                    <input type="number" class="form-control" id="Cost_Genral_Rooms" name="Cost_Genral_Rooms" placeholder="Cost of Genral Rooms" required />
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <input type="number" class="form-control" id="No_AC_Rooms" name="No_AC_Rooms" placeholder="No. of AC Rooms" required />
+                </div>
+                <div class="col-4">
+                    <input type="number" class="form-control" id="Cost_AC_Rooms" name="Cost_AC_Rooms" placeholder="Cost of AC Rooms" required />
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <input type="number" class="form-control" id="No_Non-AC_Rooms" name="No_Non-AC_Rooms" placeholder="No. of Non-AC Rooms" required />
+                </div>
+                <div class="col-4">
+                    <input type="number" class="form-control" id="Cost_Non-AC_Rooms" name="Cost_Non-AC_Rooms" placeholder="Cost of Non-AC Rooms" required />
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <input type="number" class="form-control" id="No_ICU_Rooms" name="No_ICU_Rooms" placeholder="No. of ICU Rooms" required />
+                </div>
+                <div class="col-4">
+                    <input type="number" class="form-control" id="Cost_ICU_Rooms" name="Cost_ICU_Rooms" placeholder="Cost of ICU Rooms" required />
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-8 submit-button">
+                    <p>
+                        <input type="submit" class="btn btn-primary btn-lg" value="Submit">
+                    </p>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

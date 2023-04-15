@@ -1,0 +1,64 @@
+input[type=text], input[type=date], input[type=radio], input[type=number], input[type=email], select {
+    color:black;
+    background-color:rgb(220, 237, 241);
+    text-decoration: black;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.homePage-container {
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    height: 70%;
+}
+
+.main-row {
+    height: 70px;
+}
+
+#blood-group {
+    width: 20%;
+    box-sizing: border-box;
+}
+
+.btn {
+    text-align: center;
+    width: 50%;
+}
+
+h3, h1 {
+    font-size: larger;
+    text-align: center;
+}
+
+#DeptName {
+    width: 100%;
+    margin: auto;
+}
+
+#Dept_Description {
+    line-height: 1;
+    height: 70px;
+    border-width: 0.4cqb;
+}
+
+#DOB, #Address {
+    line-height: 2;
+
+}
+
+.WelcomePage, .HomePage {
+    background-color: rgb(85, 148, 48);
+    text-align: center;
+    margin: auto;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(235, 12, 12);
+}
+
+.PatientPage, .DoctorPage, .DepartmentPage {
+    background-color: rgb(236, 247, 236);
+}

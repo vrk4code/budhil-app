@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Doctor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="DoctorPage">
+    <form id="form" method="POST" action="WelcomePage.html">
+        <div class="container">
+            <div class="row main-row">
+                <div class="col"></div>
+                <div class="col-10">
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row headingtext">
+                <div class="col"></div>
+                <div class="col-10">
+                    <h3>Fill the below details to register new Doctor in HMS</h3>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-3">
+                        <input type="text" class="form-control" id="First_Name" name="First_Name" maxlength="20" pattern="[A-Za-z]+" placeholder="First Name" required />
+                </div>
+                <div class="col-3">
+                        <input type="text" class="form-control" id="Middle_Name" name="Middle_Name" placeholder="Middle Name" required />
+                </div>
+                <div class="col-3">
+                        <input type="text" class="form-control" id="Last_Name" name="Last_Name" maxlength="20" pattern="[A-Za-z]+" placeholder="Last Name" required />
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <input type="text" class="form-control" id="Registration_No" name="Registration_No" placeholder="Doctor Registration number" required />
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-6  form-inline">
+                    Date of Birth &nbsp;&nbsp;  
+                    <input type="date" class="form-control" id="DOB" name="Date of Birth" required />
+                    
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-5">
+                            Gender 
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <input type="radio" id="Male" name="Gender" value="Male">
+                            <label for="Male">Male</label>
+                            <input type="radio" id="Female" name="Gender" value="Female">
+                            <label for="Female">Female</label> 
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <input type="text" class="form-control" id="contact" placeholder="Contact Number" pattern="[0-9]{10}" required title="Please enter a 10-digit phone number"/>
+                </div>
+                <div class="col-4">
+                    <input type="email" class="form-control" id="EmailId" name="EmailId" placeholder="Email Id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required title="Please provide correct email address format"/>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <input type="text" class="form-control" id="doctor_specialization" name="doctor_specialization" placeholder="Specialization" required />
+                </div>
+                <div class="col-4">
+                    <input type="text" class="form-control" id="doctor_qualification" name="doctor_qualification" placeholder="Qualification" required />
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-6" id="Dept_Description">
+                    <div id="Address">
+                        Address
+                        <textarea  class="form-control" name="Dept_Description" rows="2" cols="50" required></textarea>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <label for="Visiting_Time">Visiting_Time<br></label>
+                    <select id="Visiting_Time" name="Time" required>
+                        <option value="Morning">Morning</option>
+                        <option value="Afternoon">Afternoon</option>
+                        <option value="Evening">Evening</option>
+                    </select>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-7">
+                    <label for="Visting_Days">Visiting Days<br></label>
+                    <input type="checkbox" id="Day" name="Day" placeholder="Mon">
+                    <label for="Visting_Days">Mon</label>
+                    <input type="checkbox" id="Day" name="Day" placeholder="Tue">
+                    <label for="Visting_Days">Tue</label>
+                    <input type="checkbox" id="Day" name="Day" placeholder="Wed">
+                    <label for="Visting_Days">Wed</label>
+                    <input type="checkbox" id="Day" name="Day" placeholder="Thurs">
+                    <label for="Visting_Days">Thurs</label>
+                    <input type="checkbox" id="Day" name="Day" placeholder="Fri">
+                    <label for="Visting_Days">Fri</label>
+                    <input type="checkbox" id="Day" name="Day" placeholder="Sat">
+                    <label for="Visting_Days">Sat</label>
+                    <input type="checkbox" id="Day" name="Day" placeholder="Sun">
+                    <label for="Visting_Days">Sun</label>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <input type="number" class="form-control" id="NoOfPatientsPerDay" name="NoOfPatientsPerDay" placeholder="No Of Patients Per Day" required />
+                </div>
+                <div class="col-4">
+                    <input type="number" class="form-control" id="DepartmentNo" name="DepartmentNo" placeholder="DepartmentNo" required />
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row main-row">
+                <div class="col-2"></div>
+                <div class="col-8 submit-button">
+                    <p>
+                        <input type="submit" class="btn btn-primary btn-lg" value="Submit">
+                    </p>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

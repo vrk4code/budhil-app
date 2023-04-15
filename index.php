@@ -10,5 +10,6 @@
         ?>
     </h1>
     <a href="tasks.php">Tasks Project</a>
+    <a href="./Frontend Application/HomePage.html">Assignment</a>
 </body>
 </html>
