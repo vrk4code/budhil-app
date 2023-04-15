@@ -6,8 +6,9 @@
 <body>
     <h1>
         <?php
-            echo 'Hello World!'
+            echo 'Hello World!';
         ?>
     </h1>
+    <a href="tasks.php">Tasks Project</a>
 </body>
 </html>
